@@ -1,0 +1,5 @@
+default: -p no_cloud_report -p allure -p bdd
+no_cloud_report: --publish-quiet
+html: --publish-quiet
+bdd: --format pretty
+allure: --format AllureCucumber::CucumberFormatter --out=logs
